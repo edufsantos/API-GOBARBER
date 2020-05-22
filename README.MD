@@ -42,7 +42,7 @@
 - Mantém a base atualizada entre todos desenvolvedores do time e também no ambiente de produção; 
 - Cada arquivo é uma migration e sua ordenação ocorre por data;
 
-``
+```
 module.exports = { 
   up: (queryInterface, Sequelize) => {     
       return queryInterface.createTable('users', {       
@@ -67,7 +67,7 @@ module.exports = {
       return queryInterface.dropTable('users')   
     } 
   }
-``
+```
 
 -  É possível desfazer uma migração se errarmos algo enquanto estivermos desenvolvendo a feature; 
 - Depois que a migration foi enviada para outros devs ou para ambiente de produção ela JAMAIS poderá ser alterada, uma nova deve ser criada; 
@@ -98,7 +98,7 @@ module.exports = {
   - Apenas 5 métodos; 
   - Estou falando da mesma entidade
 
-``
+```
 class UserController { 
   index() { } !// Listagem de usuários 
   show() { } !// Exibir um único usuário 
@@ -106,4 +106,4 @@ class UserController {
   update() { } !// Alterar usuário 
   delete() { } !// Remover usuário 
 }
-``
+```
