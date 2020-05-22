@@ -41,6 +41,7 @@
 - Cada arquivo contém instruções para criação, alteração ou remoção de tabelas ou colunas;
 - Mantém a base atualizada entre todos desenvolvedores do time e também no ambiente de produção; 
 - Cada arquivo é uma migration e sua ordenação ocorre por data;
+
 ``
 module.exports = { 
   up: (queryInterface, Sequelize) => {     
@@ -89,3 +90,20 @@ module.exports = {
 #### View
   <p>A view é o retorno ao cliente, em aplicações que não utilizando o modelo de API REST isso pode ser um HTML, mas no nosso caso a view é apenas nosso JSON que será retornado ao front-end e depois manipulado pelo ReactJS ou React Native. </p>
 
+### A face de um controller
+  - Classes; 
+  - Sempre retorna um JSON; 
+  - Não chama outro controller/ método; 
+  - Quando criar um novo controller: 
+  - Apenas 5 métodos; 
+  - Estou falando da mesma entidade
+
+``
+class UserController { 
+  index() { } !// Listagem de usuários 
+  show() { } !// Exibir um único usuário 
+  store() { } !// Cadastrar usuário 
+  update() { } !// Alterar usuário 
+  delete() { } !// Remover usuário 
+}
+``
