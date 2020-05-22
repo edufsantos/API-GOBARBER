@@ -1,4 +1,6 @@
 import User from '../models/User';
+import bcrypt from 'bcryptjs';
+
 
 class UserController{ 
   async store(req, res){
