@@ -8,7 +8,7 @@
   - Sem SQL (na maioria das vezes); 
   - Apenas código JavaScript;
     
-    ``
+    ```
       // no sql fica assim 
       INSERT INTO users (name, email)       
       VALUES (       
@@ -35,7 +35,8 @@
             } 
         }
       )
-      ``
+      ```
+
 ## Migrations 
 - Controle de versão para base de dados; 
 - Cada arquivo contém instruções para criação, alteração ou remoção de tabelas ou colunas;
