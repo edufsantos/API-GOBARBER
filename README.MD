@@ -43,6 +43,9 @@
 - Mantém a base atualizada entre todos desenvolvedores do time e também no ambiente de produção; 
 - Cada arquivo é uma migration e sua ordenação ocorre por data;
 
+- para rodar é necessario dar um  ``` yarn sequelize db:migrate```
+
+
 ```
 module.exports = { 
   up: (queryInterface, Sequelize) => {     
